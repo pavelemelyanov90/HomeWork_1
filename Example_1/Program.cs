@@ -5,11 +5,9 @@ int number1 = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите второе число");
 int number2 = int.Parse(Console.ReadLine()!);
 
-if(number1 > number2)
+int max = number1;
+if(number2 > max)
 {
-    Console.WriteLine($"Максимальное число {number1}");
+    max = number2;
 }
-else
-{
-    Console.WriteLine($"Максимальное число {number2}");
-}        
+Console.WriteLine($"Максимальное число {max}");
